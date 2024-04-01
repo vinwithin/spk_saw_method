@@ -64,16 +64,16 @@ class HitungController extends Controller
         foreach ($terbobot as $key => $val) {
             $total[$key] = array_sum($val);
         }
+        
         arsort($total);
        
         $no = 1;
         foreach ($total as $key => $val) {
             $rank[$key] = $no++;
         }
+        // dd($rank);
         ksort($total);
-        return view('hitung.index', compact('title', 'kriterias', 'alternatifs', 'nilais', 'minmax'));
+        return view('hitung.index', compact('title', 'kriterias', 'alternatifs', 'nilais', 'minmax', 'normal', 'terbobot', 'total', 'rank'));
     }
-    public function normal(){
-        return view('hitung.normal', compact('kriterias','normal'));
-    }
+   
 }
