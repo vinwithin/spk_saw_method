@@ -14,6 +14,9 @@
     <!-- Custom fonts for this template-->
     {{-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;&display=swap" rel="stylesheet"> --}}
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
@@ -38,7 +41,7 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid text-black "  >
+                <div class="container-fluid text-black ">
 
                     <!-- Page Heading -->
                     @yield('dashboard')
@@ -130,7 +133,8 @@
     <script src="/js/sb-admin-2.min.js"></script>
     <script src="/js/preview.js"></script>
     <script src="https://kit.fontawesome.com/f10456a175.js" crossorigin="anonymous"></script>
-
+   
+   
 </body>
 
 </html>
