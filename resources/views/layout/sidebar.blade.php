@@ -40,16 +40,11 @@
             <i class="fa-regular fa-calendar-plus "></i>
             <span class="fs-6">Nilai</span></a>
     </li>
-    <div class="dropdown nav-item p-4">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Hitung
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="/hitung">Perhitungan</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
+    <li class="nav-item  {{ Request::is('hitung*') ? 'active' : '' }}">
+        <a class="nav-link" href="/hitung" style="font-family: 'Times New Roman', Times, serif;">
+            <i class="fa-regular fa-calendar-plus "></i>
+            <span class="fs-6">Hitung</span></a>
+    </li>
     <!-- Divider -->
     @can('view', App\Models\User::class)
         <hr class="sidebar-divider">

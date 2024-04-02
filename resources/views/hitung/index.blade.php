@@ -1,10 +1,10 @@
 @extends('layout/index')
 @section('nilai')
-    <ul class="nav nav-pills">
-        <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-        <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
-        <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
-        <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+    <ul class="nav nav-pills p-2">
+        <li class="active"><a data-toggle="pill" href="#home">Perhitungan</a></li>
+        <li><a data-toggle="pill" href="#menu1">Normalisasi</a></li>
+        <li><a data-toggle="pill" href="#menu2">Terbobot</a></li>
+        <li><a data-toggle="pill" href="#menu3">Ranking</a></li>
     </ul>
     <div class="tab-content">
         <div id="home" class="tab-pane fade show in active ">
@@ -60,12 +60,9 @@
                 <div class="table-responsive col-lg-">
 
 
-                    <form action="/artikel" method="get"
-                        class="form-inline mr-auto w-100 navbar-search justify-content-end mb-3">
+                    
 
-                    </form>
-
-                    <table class="table table-striped table-hover">
+                    <table class="table table-striped table-hover ">
                         <thead>
                             <tr>
                                 <th scope="col">No</th>
@@ -83,7 +80,7 @@
                                 <tr>
                                     <td>{{ $key }}</td>
                                     @foreach ($val as $k => $v)
-                                        <td>{{ round($v, 4) }}</td>
+                                        <td >{{ round($v, 4) }}</td>
                                     @endforeach
                                 </tr>
                             @endforeach

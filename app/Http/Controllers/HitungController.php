@@ -42,9 +42,10 @@ class HitungController extends Controller
         foreach ($arr as $key => $val) {
             $minmax[$key]['min'] = min($val);
             $minmax[$key]['max'] = max($val);
+           
             
         }
-        // dd($minmax[9]['max']);
+        
        
         foreach ($nilais as $key => $val) {
             foreach ($val as $k => $v) {
